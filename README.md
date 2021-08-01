@@ -32,16 +32,49 @@ For this question, we can simply take a look at our adjusted R-Squared value whi
 
 ## Summary Statistics on Suspension Coils
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+Now that we have investigated the MPG for our prototypes, we now would like to see the weight capaciticies of multiple suspension coils across different production lots using R. Our results are as follows (after loading in the dataset):
+
+INSERT IMAGE HERE
+
+Now that we have an idea of our entire dataset, we would like to break these out into their respective Manufacturing Lots:
+
+INSERT IMAGE HERE
+
+Now that we have a clear picture of what our samples look like, we can investiage the following question:
+
+* The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+As demonstrated above, if we consider the entire manufacturing lot, we see that our total variance is equal to 62.29356 and thus meets the design specifications. However, as we break them down by their respective lots, we see a clear outlier in Lot 3. In this lot, we see that our variance is currently calculated at 170 (well above the design specification). 
 
 ## T-Tests on Suspension Coils
 
-Briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary. 
+To further understand out whether the means are statisically different from the population PSI mean of 1500, we employ the use of a t-test using R. Using the previous dataset, we first began my looking at all of our manufacturing lots:
+
+INSERT IMAGE HERE
+
+From this t-test, we make the following observation that our p-value is .06028 (larger than .05) which means we fail to reject the null-hypothesis and conclude that the PSI means are not statisically significantly different from the population.
+
+And then, as we understood the variance between the lots was greater than our design specifications, we take a look at our three lots individually:
+
+INSERT IMAGE HERE
+
+For Lot 1, we observe our p-value is 1 which means we fail to reject the null-hypothesis and conclude that the PSI means are not statisically significantly different from the population.
+
+INSERT IMAGE HERE 
+
+For Lot 2, we observe our p-value is .6072 which means we fail to reject the null-hypothesis and conclude that the PSI means are not statisically significantly different from the population.
+
+INSERT IMAGE HERE
+
+For Lot 3, we observe our p-value is .04168 which means we reject the null-hypothesis and conclude that the PSI means are statisically significantly different from the population.
+
+As suspsected, it appears there is more going on with Manufacturing Lot 3 than perhaps we understood before. Therefore, further investigation and analysis to deteremine the causes would be in order. 
 
 
 ## Study Design: MechaCar vs Competition
 
-short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating. 
+short description of a statistical study that can quantify how the MechaCar performs against the competition. 
+In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating. 
 
 
 What metric or metrics are you going to test?
