@@ -4,7 +4,7 @@
 
 To begin the analysis of our data, we have performed a multiple linear regression on our sample utilzing R. Our results are as follows (after loading in the dataset):
 
-INSERT IMAGE HERE
+![Linear Regression](https://github.com/jo-robles/MechaCar_Statistical_Analysis/blob/53438846dfcec90810ffedfa5d1cc6b5c4474938/Resources/Images/linear_regression.PNG)
 
 From here, we sought to answer three questions utilizing linear regression:
 
@@ -12,7 +12,8 @@ From here, we sought to answer three questions utilizing linear regression:
 
 To answer this question, we take a look at the summary output provided by R for our dataset:
 
-INSERT IMAGE HERE
+![LM Summary](https://github.com/jo-robles/MechaCar_Statistical_Analysis/blob/53438846dfcec90810ffedfa5d1cc6b5c4474938/Resources/Images/summar.PNG)
+
 
 As we look at this data, we are specifically interested in the Pr(>|t|) value. In our case, we see three values that are statistically unlikely to provide random amounts to our linear model for MPG:
 
@@ -34,11 +35,11 @@ For this question, we can simply take a look at our adjusted R-Squared value whi
 
 Now that we have investigated the MPG for our prototypes, we now would like to see the weight capaciticies of multiple suspension coils across different production lots using R. Our results are as follows (after loading in the dataset):
 
-INSERT IMAGE HERE
+![Total Summary](https://github.com/jo-robles/MechaCar_Statistical_Analysis/blob/53438846dfcec90810ffedfa5d1cc6b5c4474938/Resources/Images/total_summary.PNG)
 
 Now that we have an idea of our entire dataset, we would like to break these out into their respective Manufacturing Lots:
 
-INSERT IMAGE HERE
+![Lot Summary](https://github.com/jo-robles/MechaCar_Statistical_Analysis/blob/53438846dfcec90810ffedfa5d1cc6b5c4474938/Resources/Images/lot_summary.PNG)
 
 Now that we have a clear picture of what our samples look like, we can investiage the following question:
 
@@ -50,21 +51,21 @@ As demonstrated above, if we consider the entire manufacturing lot, we see that 
 
 To further understand out whether the means are statisically different from the population PSI mean of 1500, we employ the use of a t-test using R. Using the previous dataset, we first began my looking at all of our manufacturing lots:
 
-INSERT IMAGE HERE
+![All Lots](https://github.com/jo-robles/MechaCar_Statistical_Analysis/blob/53438846dfcec90810ffedfa5d1cc6b5c4474938/Resources/Images/t_test_all_lots.PNG)
 
 From this t-test, we make the following observation that our p-value is .06028 (larger than .05) which means we fail to reject the null-hypothesis and conclude that the PSI means are not statisically significantly different from the population.
 
-And then, as we understood the variance between the lots was greater than our design specifications, we take a look at our three lots individually:
+And then, as we understood the variance between the lots was greater than our design specifications, we take a look at our three lots individually.
 
-INSERT IMAGE HERE
+![Lot 1](https://github.com/jo-robles/MechaCar_Statistical_Analysis/blob/53438846dfcec90810ffedfa5d1cc6b5c4474938/Resources/Images/t_test_lot_1.PNG)
 
 For Lot 1, we observe our p-value is 1 which means we fail to reject the null-hypothesis and conclude that the PSI means are not statisically significantly different from the population.
 
-INSERT IMAGE HERE 
+![Lot 2](https://github.com/jo-robles/MechaCar_Statistical_Analysis/blob/53438846dfcec90810ffedfa5d1cc6b5c4474938/Resources/Images/t_test_lot_2.PNG)
 
 For Lot 2, we observe our p-value is .6072 which means we fail to reject the null-hypothesis and conclude that the PSI means are not statisically significantly different from the population.
 
-INSERT IMAGE HERE
+![Lot 3](https://github.com/jo-robles/MechaCar_Statistical_Analysis/blob/53438846dfcec90810ffedfa5d1cc6b5c4474938/Resources/Images/t_test_lot_3.PNG)
 
 For Lot 3, we observe our p-value is .04168 which means we reject the null-hypothesis and conclude that the PSI means are statisically significantly different from the population.
 
